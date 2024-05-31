@@ -34,19 +34,6 @@ export class AdminCaterogyComponent {
         this.errMessage = err;
       },
     });
-
-    this.searchService.keyword$
-      .pipe(
-        debounceTime(300),
-        distinctUntilChanged(),
-        switchMap(keyword => this.http.get<any[]>(`http://localhost:3000/searchCategory?keyword=${keyword}`))
-      )
-      .subscribe(categories => {
-        this.categories = categories;
-        this.resultCount = categories.length;
-      }, error => {
-        console.error(error);
-      });
   }
 
   changeCat: string = '';
