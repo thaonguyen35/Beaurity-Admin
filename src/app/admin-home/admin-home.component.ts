@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef, VERSION } from '@angular/core';
+import { Component } from '@angular/core';
 import { AdminCosmeticService } from '../services/admin-cosmetic.service';
 import { AdminCategoryService } from '../services/admin-category.service';
 import { AdminCustomerService } from '../services/admin-customer.service';
