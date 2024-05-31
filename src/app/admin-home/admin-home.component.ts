@@ -23,7 +23,6 @@ export class AdminHomeComponent {
   errMessage: string = '';
 
   orders: any;
-  chart: any;
 
   constructor(
     public _service: AdminCosmeticService,
