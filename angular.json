@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my-admin",
+            "outputPath": "dist/BeaurityAdmin",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -64,14 +64,14 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "my-admin:build:production"
+              "browserTarget": "BeaurityAdmin:build:production"
             },
             "development": {
-              "browserTarget": "my-admin:build:development"
+              "browserTarget": "BeaurityAdmin:build:development"
             }
           },
           "options": {
-            "browserTarget": "my-admin:build",
+            "browserTarget": "BeaurityAdmin:build",
             "port": 4002,
             "proxyConfig": "src/proxy.conf.json"
           },
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "my-admin:build"
+            "browserTarget": "BeaurityAdmin:build"
           }
         },
         "test": {
