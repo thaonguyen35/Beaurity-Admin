@@ -16,7 +16,6 @@ import { AdminOrderComponent } from './admin-order/admin-order.component';
 import { AdminIncompleteOrderComponent } from './admin-order/admin-incomplete-order/admin-incomplete-order.component';
 import { AdminOrderDetailComponent } from './admin-order/admin-order-detail/admin-order-detail.component';
 import { MatCardModule } from '@angular/material/card'; 
-import { NgChartsModule } from 'ng2-charts';
 const routes: Routes = [
   { path: "", redirectTo:"admin-login", pathMatch:"full"},
   { path: "admin-login", component: AdminLoginComponent},
@@ -38,7 +37,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes), MatCardModule, NgChartsModule],
+  imports: [RouterModule.forRoot(routes), MatCardModule],
   exports: [RouterModule]
 })
 
